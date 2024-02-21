@@ -71,7 +71,7 @@ namespace SzyfrVigenereWPF
         private void encryptButton_Click(object sender, RoutedEventArgs e)
         {
             string input = inputTextBox.Text;
-            string klucz = "tajnyklucz"; // Tutaj zdefiniuj klucz lub pobierz go z interfejsu użytkownika
+            string klucz = "tajnyklucz"; 
             string encrypted = szyfrVigenere.Szyfruj(input, klucz);
             outputTextBox.Text = encrypted;
         }
@@ -79,7 +79,7 @@ namespace SzyfrVigenereWPF
         private void decryptButton_Click(object sender, RoutedEventArgs e)
         {
             string input = inputTextBox.Text;
-            string klucz = "tajnyklucz"; // Użyj tego samego klucza, co do szyfrowania
+            string klucz = "tajnyklucz"; 
             string decrypted = szyfrVigenere.Deszyfruj(input, klucz);
             outputTextBox.Text = decrypted;
         }
